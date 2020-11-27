@@ -139,7 +139,7 @@ ee_check_credentials <- function(quiet = FALSE) {
 
   # Exist the gcs credential?
   gcs_credentials <- list.files(driverdir, "\\.json$", full.names = TRUE)[1]
-  ex_gcs_cred <- file.exists(drive_credentials)
+  ex_gcs_cred <- file.exists(gcs_credentials)
 
   # Google Earth Engine credentials
   if (!quiet) {
